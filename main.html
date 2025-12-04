@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Priyanka U Ghodke — Portfolio</title>
+  <meta name="description" content="Portfolio of Priyanka U Ghodke — Electronics & Telecommunication student, intern at ISRO, GMRT." />
+  <style>
+    :root{--accent:#0b79d0;--bg:#0f1720;--card:#0b1220;--muted:rgba(255,255,255,0.75);--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color: #eef2f7;background:linear-gradient(180deg,#071025 0%, #071a2b 100%);}
+    .wrap{max-width:1000px;margin:28px auto;padding:18px}
+    header{display:flex;gap:18px;align-items:center}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:var(--glass);display:grid;place-items:center}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-weight:600}
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px;margin-top:18px}
+    h1{margin:0;font-size:26px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    h2{margin:0 0 8px;font-size:18px}
+    .small{font-size:14px;color:var(--muted)}
+    .badge{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;margin-right:6px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .project-card{padding:12px;border-radius:8px;background:rgba(255,255,255,0.01);margin-bottom:10px}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .hidden{display:none}
+    /* routing helpers */
+    .page{display:none}
+    .page.active{display:block}
+    .video-placeholder{width:100%;height:360px;background:rgba(0,0,0,0.25);display:grid;place-items:center;border-radius:8px}
+    .video-placeholder p{color:var(--muted)}
+    .nav-link{cursor:pointer}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.nav{margin-top:12px}}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"><strong>PU</strong></div>
+        <div>
+          <div style="font-weight:700">Priyanka U Ghodke</div>
+          <div class="small">Electronics & Telecommunication • Embedded Systems • VLSI</div>
+        </div>
+      </div>
+
+      <nav>
+        <a class="nav-link" data-route="home">Home</a>
+        <a class="nav-link" data-route="about">About</a>
+        <a class="nav-link" data-route="experience">Experience</a>
+        <a class="nav-link" data-route="projects">Projects</a>
+        <a class="nav-link" data-route="resume">Resume</a>
+        <a class="nav-link" data-route="contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home / Introduction (first page) -->
+    <main>
+      <section id="home" class="page active">
+        <div class="hero card">
+          <div style="display:flex;gap:16px;align-items:center;">
+            <div style="flex:1">
+              <h1>Hi — I'm Priyanka</h1>
+              <p class="lead">Electronics & Telecommunication undergraduate focused on embedded systems, signal processing and VLSI. I build sensor systems, FPGA prototypes, and analyze real-world data for control and communications applications.</p>
+              <div style="margin-top:12px">
+                <a class="btn" href="#projects" onclick="navigateTo('projects')">See projects</a>
+                <a class="btn" style="background:#4caf50;margin-left:8px" href="#contact" onclick="navigateTo('contact')">Contact</a>
+              </div>
+            </div>
+            <div style="width:320px">
+              <div class="card small">
+                <strong>Location</strong>
+                <div class="small">Ahmedabad, Gujarat, India</div>
+                <hr />
+                <strong>Email</strong>
+                <div class="small">priyaghodke771@gmail.com</div>
+                <hr />
+                <strong>Phone</strong>
+                <div class="small">+91 74997 64968</div>
+                <hr />
+                <strong>LinkedIn</strong>
+                <div class="small"><a href="https://www.linkedin.com/in/priyanka-ghodke-a176a5275" target="_blank" style="color:var(--muted)">priyanka-ghodke</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px">
+            <h2 style="font-size:16px;margin-bottom:8px">Project video</h2>
+            <!-- Video placeholder: replace with your video file or embed link -->
+           
+
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- About page -->
+      <section id="about" class="page">
+        <div class="card">
+          <h2>About — Summary</h2>
+          <p class="small">I am an Electronics & Telecommunication engineering student with hands-on experience in embedded firmware (Embedded C), FPGA/Verilog, signal processing with MATLAB/Python, and control systems. Internships at ISRO (SAC) and NCRA-GMRT gave me exposure to sensor/payload electronics and turbulence data analysis.</p>
+
+          <h3 style="margin-top:14px">Education</h3>
+          <div class="small">
+            <strong>B.E. — Electronics & Telecommunication</strong><br />Savitribai Phule Pune University (2022 - 2026)<br />CGPA: 7.3
+            <hr />
+            <strong>HSC / SSC</strong><br />Rayat Shikshan Sanstha — 82.33% (HSC), 83.40% (SSC)
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience page -->
+      <section id="experience" class="page">
+        <div class="card">
+          <h2>Experience</h2>
+          <div class="small">
+            <strong>ISRO — SAC, Ahmedabad</strong><br />Research Intern — Sensor/payload electronics & FPGA work (Sep 2025 - Present)
+            <p>Design and testing of analog front-ends, sensor interfacing and FPGA-based prototypes.</p>
+          </div>
+          <div style="height:8px"></div>
+          <div class="small">
+            <strong>NCRA — GMRT, TIFR</strong><br />Research Intern — Wind data analysis (Jun 2025 - Aug 2025)
+            <p>Processed wind data, PSD analysis (FFT/Welch), compared Davenport spectrum and derived discrete transfer functions using Tustin transform.</p>
+          </div>
+          <div style="height:8px"></div>
+          <div class="small">
+            <strong>EMERTXE Technologies</strong><br />Technical Intern — Embedded C (Jan 2025 - Feb 2025)
+            <p>Developed a microwave-oven simulator using PIC16F877A.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects page (list) -->
+      <section id="projects" class="page">
+        <div class="card">
+          <h2>Projects</h2>
+          <div class="project-card">
+            <strong>Wind Data Analysis & Transfer Function Modeling</strong>
+            <div class="small">Processed turbulence data, applied FFT/Welch PSD and validated a discretized 4th-order model using Tustin transform.</div>
+          </div>
+
+          <div class="project-card">
+            <strong>Solar Pesticide Sprayer Robot</strong>
+            <div class="small">Solar-powered sprayer with feedback control; shortlisted for I2i finals.</div>
+          </div>
+
+          <div class="project-card">
+            <strong>Target Classification using Micro-Doppler</strong>
+            <div class="small">Feature extraction and classification from micro-doppler signatures. Shortlisted for Aavishkar 2024 zonal.</div>
+          </div>
+
+          <div class="project-card">
+            <strong>Microwave Oven Simulation (PIC16F877A)</strong>
+            <div class="small">MPLABX embedded C simulator implementing micro/grill/convection modes.</div>
+          </div>
+
+          <div style="margin-top:12px">
+            <a class="btn" onclick="openProjectDetail('wind')">Open: Wind Data Analysis</a>
+            <a class="btn" style="background:#666;margin-left:8px" onclick="openProjectDetail('robot')">Open: Sprayer Robot</a>
+          </div>
+        </div>
+
+        <!-- Project detail modal / section (simple inline) -->
+        <div id="projectDetail" class="card hidden" style="margin-top:12px"></div>
+      </section>
+
+      <!-- Resume page -->
+      <section id="resume" class="page">
+        <div class="card">
+          <h2>Resume</h2>
+          <p class="small">Download a PDF copy of my resume.</p>
+          <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
+        </div>
+      </section>
+
+      <!-- Contact page -->
+      <section id="contact" class="page">
+        <div class="card">
+          <h2>Contact</h2>
+          <p class="small">Feel free to reach out for internships, collaborations or project questions.</p>
+          <div class="small" style="margin-top:8px">
+            Email: <a href="mailto:priyaghodke771@gmail.com">priyaghodke771@gmail.com</a><br />
+            Phone: +91 74997 64968<br />
+            LinkedIn: <a href="https://www.linkedin.com/in/priyanka-ghodke-a176a5275" target="_blank">priyanka-ghodke</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="small">Built from resume — replace content & assets as needed. © Priyanka U Ghodke</footer>
+  </div>
+
+  <script>
+    // Simple hash-based routing and SPA behaviour
+    const pages = document.querySelectorAll('.page');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function showRoute(route){
+      pages.forEach(p => p.classList.remove('active'));
+      const sel = document.getElementById(route);
+      if(sel) sel.classList.add('active');
+      // change URL hash without reloading
+      history.replaceState(null, '', '#'+route);
+    }
+
+    function navigateTo(route){ showRoute(route); }
+
+    navLinks.forEach(a=>{
+      a.addEventListener('click', e=>{
+        const r = a.dataset.route;
+        showRoute(r);
+      });
+    });
+
+    // initial route from hash
+    const initial = location.hash ? location.hash.replace('#','') : 'home';
+    if(document.getElementById(initial)) showRoute(initial);
+
+    // Embed video from URL or show upload instructions
+    function embedVideo(){
+      const url = document.getElementById('embedUrl').value.trim();
+      const area = document.getElementById('videoArea');
+      if(!url) return alert('Paste a YouTube/Vimeo share/embed URL.');
+      // basic handling for youtube watch?v= links -> embed
+      let embed = url;
+      if(url.includes('watch?v=')) embed = url.replace('watch?v=', 'embed/');
+      if(url.includes('youtu.be/')) embed = url.replace('youtu.be/', 'www.youtube.com/embed/');
+      area.innerHTML = `<iframe width="100%" height="360" src="${embed}" frameborder="0" allowfullscreen></iframe>`;
+    }
+
+    function showUploadInstructions(){
+      const area = document.getElementById('videoArea');
+      area.innerHTML = `<div style=\"padding:18px;text-align:left\"><p class=\"small\">To use a local video file, add a file named <code>project-video.mp4</code> next to this HTML file and use this markup in place of the placeholder:<br/><br/><code>&lt;video controls width=\"100%\"&gt;&lt;source src=\"project-video.mp4\" type=\"video/mp4\"&gt;Your browser does not support the video tag.&lt;/video&gt;</code></p></div>`;
+    }
+
+    // Project detail viewer (simple)
+    function openProjectDetail(key){
+      const detail = document.getElementById('projectDetail');
+      let html = '';
+      if(key==='wind'){
+        html = `<h3>Wind Data Analysis & Transfer Function Modeling</h3><div class=\"small\"><p>Processed wind turbulence data using Welch's method and FFT, compared against Davenport spectrum, derived a continuous 4th-order transfer function and discretized it using Tustin transform. Validated PSD and Bode response against measured data.</p><p><strong>Tools:</strong> MATLAB, Python, Simulink</p></div>`;
+      } else if(key==='robot'){
+        html = `<h3>Solar Pesticide Sprayer Robot</h3><div class=\"small\"><p>Designed a solar-powered control system for precise spraying with feedback control and low-power optimization. Shortlisted for I2i finals.</p><p><strong>Tools:</strong> Embedded C, PCB design</p></div>`;
+      }
+      detail.innerHTML = html + `<div style=\"margin-top:8px\"><button class=\"btn\" onclick=\"document.getElementById('projectDetail').classList.add('hidden')\">Close</button></div>`;
+      detail.classList.remove('hidden');
+      detail.scrollIntoView({behavior:'smooth'});
+    }
+  </script>
+</body>
+</html>
